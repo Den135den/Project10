@@ -1,0 +1,29 @@
+.temperature__block{
+    display: flex;
+    color: #f0f;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .temperature:nth-child(1) {
+    justify-content: center;
+    text-align: left; 
+    padding-left: 20px;
+    
+ }
+  .temperature:nth-child(2) {
+    padding-right: 20px;
+  }
+  
+
+
+  .content__temperature{
+    background: linear-gradient(to left, black,  red);
+    -webkit-background-clip: text;
+    color: transparent;
+  } 
+  .content__temperature:nth-child(2){
+    background: linear-gradient(to left, black,  blue);
+    -webkit-background-clip: text;
+    color: transparent;
+  }

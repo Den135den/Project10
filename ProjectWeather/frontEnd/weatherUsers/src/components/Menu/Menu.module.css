@@ -1,0 +1,100 @@
+.navbar {
+    position: fixed; /* Зробити меню фіксованим */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    z-index: 5; /* Задати z-index, щоб меню було поверх інших елементів */
+}
+
+.value__link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 10px 10px;
+    min-width: 70px;
+    padding: 5px 5px;
+    border: 2px solid transparent;
+    font-size: 20px;
+}
+
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menuToggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        background-color: #333;
+        width: 100%;
+        padding-top: 43px;
+        padding-left: 18px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        transition: right 0.3s;
+    }
+
+    .menu.open {
+        left: 0;
+        background-color: #fff;
+        display: block;
+        width: 200px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .value__link{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+         margin: 0;
+        padding-left: 5px;
+        padding: 0;
+    }
+    .menuToggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        z-index: 14;
+        cursor: pointer;
+        width: 30px;
+    }
+}

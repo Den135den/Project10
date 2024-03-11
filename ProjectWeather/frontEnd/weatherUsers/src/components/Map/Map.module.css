@@ -1,0 +1,13 @@
+.mapContainer {
+    width: 30%;
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .color__timer{
+    color: black;
+  }
+  .color__temperatura{
+     color: green;
+  }
